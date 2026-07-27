@@ -13,8 +13,13 @@ const sCorrect = new Audio('sounds/cr.wav');
 const sWrong = new Audio('sounds/icr.wav');
 const sClash = new Audio('sounds/swords-clash.wav');
 const sBoss = [
-    new Audio('sounds/s0.wav'), new Audio('sounds/s1.wav'), new Audio('sounds/s2.wav'),
-    new Audio('sounds/s3.mp3'), new Audio('sounds/s4.wav'), new Audio('sounds/s5.wav'), new Audio('sounds/s6.wav')
+    new Audio('sounds/s0.wav'), 
+    new Audio('sounds/s1.wav'), 
+    new Audio('sounds/s2.wav'),
+    new Audio('sounds/s3.mp3'), 
+    new Audio('sounds/s4.wav'), 
+    new Audio('sounds/s5.wav'), 
+    new Audio('sounds/s6.wav')
 ];
 
 function stopAllBossSounds() { sBoss.forEach(audio => { audio.pause(); audio.currentTime = 0; }); }
